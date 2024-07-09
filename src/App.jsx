@@ -11,7 +11,7 @@ import clientMeet from "./assets/client-meet.svg";
 function App() {
   return (
     <>
-      <div className="space-y-4 bg-almost-white">
+      <div className="space-y-4 bg-almost-white min-h-screen">
         {/* Header */}
         <div className="flex flex-row items-center justify-between pt-6 pl-6 pr-6">
           <div>

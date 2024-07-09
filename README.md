@@ -55,6 +55,8 @@ Users should be able to:
 
 ### What I learned
 
+1. To ensure the background color extends all the way down the page in Tailwind CSS, you can apply a minimum height (min-h-screen) to the top-level <div> in your App component. This utility class ensures that the <div> will have at least the height of the viewport, thus extending the background color throughout the entire visible area of the page, regardless of the content's height.
+
 
 ### Continued development
 
@@ -62,7 +64,7 @@ Users should be able to:
 ### Useful resources
 
 - [Google Font Epilogue](https://fonts.google.com/specimen/Epilogue) - Google Font Epilogue from Google Fonts.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Navigation Sidebar](https://flowbite.com/docs/components/sidebar/) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 
 ## Author
