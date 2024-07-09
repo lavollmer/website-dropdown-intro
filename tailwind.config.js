@@ -10,7 +10,10 @@ module.exports = {
       },
       fontSize: {
         'paragraph': '18px',
-      }
+      },
+      fontFamily: {
+        'epilogue': ['Epilogue', 'sans-serif'], // Add this line
+      },
     },
   },
   variants: {
