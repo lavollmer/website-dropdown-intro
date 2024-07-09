@@ -30,13 +30,16 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
+
+1. Mobile Responsive Design First
+2. Mobile Responsive - Side tab with dropdown
+3. Planning process using paint in Microsoft
 
 ### Built with
 
@@ -53,13 +56,12 @@ Users should be able to:
 ### What I learned
 
 
-
 ### Continued development
 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Google Font Epilogue](https://fonts.google.com/specimen/Epilogue) - Google Font Epilogue from Google Fonts.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 
