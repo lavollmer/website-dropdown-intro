@@ -17,7 +17,8 @@ function App() {
           <div>
             <img src={logo} alt="Snap logo"></img>
           </div>
-          <div>
+          <div className="flex">
+            <div className="h-screen">Sidebar</div>
             <img src={hamburger} alt="Dropdown menu" className="w-full"></img>
           </div>
         </div>
