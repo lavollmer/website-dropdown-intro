@@ -11,6 +11,7 @@ import closeMenu from "./assets/icon-close-menu.svg";
 import { useState } from "react";
 
 function App() {
+  // useState to toggle the sidebar - set to false by default
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -21,12 +22,16 @@ function App() {
           <div>
             <img src={logo} alt="Snap logo"></img>
           </div>
-          <div className={`flex ${open ? "w-72" : "w-20"}`}>
+          <div className={`flex ${isOpen ? "w-72" : "w-20"}`}>
             <div className="absolute top-0 right-0 pt-6 pr-6 z-50">
               <img
+              // Ternary operator - Toggle the hamburger/close menu icon based on the isOpen state
+              // if isOpen is true, show the close menu icon, else show the hamburger icon
                 src={isOpen ? closeMenu : hamburger}
                 alt={isOpen ? "Close menu" : "Open menu"}
                 className="cursor-pointer"
+                // onClick event handler - when user clicks on the element, it listens and toggles the isOpen state
+                // if isOpen is true, it will set to false, else it will set to true
                 onClick={() => setIsOpen(!open)}
               ></img>
             </div>
