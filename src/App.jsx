@@ -7,8 +7,11 @@ import clientAudiophile from "./assets/client-audiophile.svg";
 import clientDatabiz from "./assets/client-databiz.svg";
 import clientMaker from "./assets/client-maker.svg";
 import clientMeet from "./assets/client-meet.svg";
+import { useState } from "react";
 
 function App() {
+  const [open, setOpen] = useState(false);
+
   return (
     <>
       <div className="space-y-4 bg-almost-white min-h-screen">
@@ -17,9 +20,28 @@ function App() {
           <div>
             <img src={logo} alt="Snap logo"></img>
           </div>
-          <div className="flex">
-            <div className="h-screen">Sidebar</div>
-            <img src={hamburger} alt="Dropdown menu" className="w-full"></img>
+          <div className={`flex ${open ? "w-72" : "w-20"}`}>
+            <div className="absolute top-0 right-0 pt-6 pr-6 z-50">
+              <img
+                src={hamburger}
+                alt="Dropdown menu"
+                className="curosr-pointer"
+                onClick={() => setOpen(!open)}
+              ></img>
+              {/* Sidebar */}
+              <div
+                className={`fixed top-0 right-0 w-72 bg-almost-black transition-transform duration-500 overflow-hidden ${
+                  open ? "translate-x-0" : "translate-x-full"
+                } h-screen`}
+                style={{
+                  width: "18rem",
+                  transitionProperty: "transform",
+                  transitionDuration: "500ms",
+                }}
+              >
+                {/* Sidebar Content */}
+              </div>
+            </div>
           </div>
         </div>
         {/* Background Image */}
