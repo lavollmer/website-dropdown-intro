@@ -103,8 +103,32 @@ function App() {
                   </div>
                 </div>
               )}
-
-              <h2>Company</h2>
+              <div
+                className="flex flew-row items-center justify-between"
+                onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
+              >
+                <h2 className="text-medium-gray cursor-pointer">Company</h2>
+                <img src={downArrow} alt="down arrow" className="w-4 h-2"></img>
+              </div>
+              {isFeaturesOpen && (
+                <div className="flex flex-col ml-4 space-y-2">
+                  <div className="flex flex-row space-x-2">
+                    <a href="#" className="text-medium-gray">
+                      History
+                    </a>
+                  </div>
+                  <div className="flex flex-row space-x-2">
+                    <a href="#" className="text-medium-gray">
+                      Team
+                    </a>
+                  </div>
+                  <div className="flex flex-row space-x-2">
+                    <a href="#" className="text-medium-gray">
+                      Blog
+                    </a>
+                  </div>
+                </div>
+              )}
               <h2>Careers</h2>
               <h2>About</h2>
               <div className="flex flex-col p-6">
