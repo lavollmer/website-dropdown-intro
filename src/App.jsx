@@ -188,7 +188,7 @@ function App() {
         {/* Desktop Layout */}
         {/* Desktop Copy Text */}
         <div className="grid-container">
-          <div className="flex flex-col justify-start space-y-4 items-left justify-left p-20 grid-item">
+          <div className="flex flex-col space-y-20 justify-start p-20 grid-item">
             <h1 className="font-almost-black font-epilogue font-bold text-6xl">
               Make remote work
             </h1>
@@ -197,9 +197,11 @@ function App() {
               processes, create team rituals, and watch productivity soar.
             </h2>
             {/* Button Learn More */}
-            <button className="bg-almost-black text-almost-white font-bold rounded-lg p-2">
-              Learn more
-            </button>
+            <div className="flex items-center">
+              <button className="bg-almost-black text-almost-white font-bold rounded-lg p-2">
+                Learn more
+              </button>
+            </div>
             {/* Client Logos */}
             <div className="flex flex-row justify-between">
               <img
@@ -228,7 +230,7 @@ function App() {
             <img
               src={backgroundDesktopImage}
               alt="Desktop background image"
-              className="h-80 w-80"
+              className="flex-grow w-full h-full object-cover"
             ></img>
           </div>
         </div>
