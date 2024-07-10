@@ -13,6 +13,7 @@ import { useState } from "react";
 function App() {
   // useState to toggle the sidebar - set to false by default
   const [isOpen, setIsOpen] = useState(false);
+  const [isFeaturesOpen, setIsFeaturesOpen] = useState(false);
 
   return (
     <>
@@ -38,7 +39,7 @@ function App() {
           </div>
           {/* Sidebar */}
           <div
-            className={`fixed top-0 right-0 w-64 bg-almost-white transition-transform duration-500 overflow-hidden ${
+            className={`text-medium-gray fixed top-0 right-0 w-64 bg-almost-white transition-transform duration-500 overflow-hidden ${
               isOpen ? "translate-x-0" : "translate-x-full"
             } h-screen`}
             style={{
@@ -48,8 +49,27 @@ function App() {
             }}
           >
             {/* Sidebar Content */}
-            <div className="flex flex-col m-14 space-y-4 font-bold">
-              <h2 className="medium-gray">Features</h2>
+            <div className="flex flex-col m-14 space-y-4 font-bold text-md font-epilogue">
+              <h2 className="text-medium-gray cursor-pointer onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}">
+                Features
+              </h2>
+              {isFeaturesOpen && (
+                <div className="flex flex-col ml-4 space-y-2">
+                  <a href="#" className="text-medium-gray">
+                    Todo List
+                  </a>
+                  <a href="#" className="text-medium-gray">
+                    Calendar
+                  </a>
+                  <a href="#" className="text-medium-gray">
+                    Reminders
+                  </a>
+                  <a href="#" className="text-medium-gray">
+                    Planning
+                  </a>
+                </div>
+              )}
+
               <h2>Company</h2>
               <h2>Careers</h2>
               <h2>About</h2>
