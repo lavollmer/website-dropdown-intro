@@ -7,10 +7,11 @@ import clientAudiophile from "./assets/client-audiophile.svg";
 import clientDatabiz from "./assets/client-databiz.svg";
 import clientMaker from "./assets/client-maker.svg";
 import clientMeet from "./assets/client-meet.svg";
+import closeMenu from "./assets/icon-close-menu.svg";
 import { useState } from "react";
 
 function App() {
-  const [open, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
@@ -23,25 +24,25 @@ function App() {
           <div className={`flex ${open ? "w-72" : "w-20"}`}>
             <div className="absolute top-0 right-0 pt-6 pr-6 z-50">
               <img
-                src={hamburger}
-                alt="Dropdown menu"
-                className="curosr-pointer"
-                onClick={() => setOpen(!open)}
+                src={isOpen ? closeMenu : hamburger}
+                alt={isOpen ? "Close menu" : "Open menu"}
+                className="cursor-pointer"
+                onClick={() => setIsOpen(!open)}
               ></img>
-              {/* Sidebar */}
-              <div
-                className={`fixed top-0 right-0 w-72 bg-almost-black transition-transform duration-500 overflow-hidden ${
-                  open ? "translate-x-0" : "translate-x-full"
-                } h-screen`}
-                style={{
-                  width: "18rem",
-                  transitionProperty: "transform",
-                  transitionDuration: "500ms",
-                }}
-              >
-                {/* Sidebar Content */}
-              </div>
             </div>
+          </div>
+          {/* Sidebar */}
+          <div
+            className={`fixed top-0 right-0 w-72 bg-almost-black transition-transform duration-500 overflow-hidden ${
+              isOpen ? "translate-x-0" : "translate-x-full"
+            } h-screen`}
+            style={{
+              width: "18rem",
+              transitionProperty: "transform",
+              transitionDuration: "500ms",
+            }}
+          >
+            {/* Sidebar Content */}
           </div>
         </div>
         {/* Background Image */}

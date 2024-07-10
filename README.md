@@ -65,6 +65,8 @@ Users should be able to:
 
 - [Google Font Epilogue](https://fonts.google.com/specimen/Epilogue) - Google Font Epilogue from Google Fonts.
 - [Navigation Sidebar](https://flowbite.com/docs/components/sidebar/) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [useState Hooks](https://hygraph.com/blog/usestate-react)
+- [Conditional Styling](https://owlcation.com/stem/conditional-styling-react)
 
 
 ## Author
