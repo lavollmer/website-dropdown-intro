@@ -1,6 +1,9 @@
-/* Assuming the class name of your navigation sidebar is .nav-sidebar */
+
 @media (min-width: 1024px) {
   .nav-sidebar {
 	display: none;
   }
+  .mobile-layout {
+    display: none;
+    }
 }

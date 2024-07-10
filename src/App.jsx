@@ -29,7 +29,7 @@ function App() {
         {/* Header */}
         <div className="flex flex-row items-center justify-between pt-6 pl-6 pr-6">
           <div>
-            <img src={logo} alt="Snap logo"/>
+            <img src={logo} alt="Snap logo" />
           </div>
           <div className={`flex ${isOpen ? "w-72" : "w-20"} bg-almost-white  `}>
             <div className="absolute top-0 right-0 pt-6 pr-6 z-50 nav-sidebar">
@@ -46,7 +46,7 @@ function App() {
             </div>
           </div>
           {/* Sidebar */}
-          <div 
+          <div
             className={`text-medium-gray fixed top-0 right-0 w-64 bg-almost-white transition-transform duration-500 overflow-hidden ${
               isOpen ? "translate-x-0" : "translate-x-full"
             } h-screen`}
@@ -63,42 +63,34 @@ function App() {
                 onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
               >
                 <h2 className="text-medium-gray cursor-pointer">Features</h2>
-                <img src={isFeaturesOpen ? upArrow : downArrow} alt={isFeaturesOpen ? "Up Arrow Icon" : "Down Arrow Icon"} className="w-4 h-2"/>
+                <img
+                  src={isFeaturesOpen ? upArrow : downArrow}
+                  alt={isFeaturesOpen ? "Up Arrow Icon" : "Down Arrow Icon"}
+                  className="w-4 h-2"
+                />
               </div>
               {isFeaturesOpen && (
                 <div className="flex flex-col ml-4 space-y-4">
                   <div className="flex flex-row space-x-2">
-                    <img src={todo} alt="todo icon" className="h-4 w-4"/>
+                    <img src={todo} alt="todo icon" className="h-4 w-4" />
                     <a href="#" className="text-medium-gray">
                       Todo List
                     </a>
                   </div>
                   <div className="flex flex-row space-x-2">
-                    <img
-                      src={calendar}
-                      alt="todo icon"
-                      className="h-4 w-4"
-                    />
+                    <img src={calendar} alt="todo icon" className="h-4 w-4" />
                     <a href="#" className="text-medium-gray">
                       Calendar
                     </a>
                   </div>
                   <div className="flex flex-row space-x-2">
-                    <img
-                      src={reminders}
-                      alt="todo icon"
-                      className="h-4 w-4"
-                    />
+                    <img src={reminders} alt="todo icon" className="h-4 w-4" />
                     <a href="#" className="text-medium-gray">
                       Reminders
                     </a>
                   </div>
                   <div className="flex flex-row space-x-2">
-                    <img
-                      src={planning}
-                      alt="todo icon"
-                      className="h-4 w-4"
-                    />
+                    <img src={planning} alt="todo icon" className="h-4 w-4" />
                     <a href="#" className="text-medium-gray">
                       Planning
                     </a>
@@ -110,7 +102,11 @@ function App() {
                 onClick={() => setIsCompanyOpen(!isCompanyOpen)}
               >
                 <h2 className="text-medium-gray cursor-pointer">Company</h2>
-                <img src={isFeaturesOpen ? upArrow : downArrow} alt={isFeaturesOpen ? "Up Arrow Icon" : "Down Arrow Icon"} className="w-4 h-2"></img>
+                <img
+                  src={isFeaturesOpen ? upArrow : downArrow}
+                  alt={isFeaturesOpen ? "Up Arrow Icon" : "Down Arrow Icon"}
+                  className="w-4 h-2"
+                ></img>
               </div>
               {isCompanyOpen && (
                 <div className="flex flex-col ml-4 space-y-4">
@@ -144,40 +140,50 @@ function App() {
             </div>
           </div>
         </div>
-        {/* Background Image */}
-        <div>
-          <img src={backgroundImageMobile} alt="background"></img>
-        </div>
-        {/* Copy Text */}
-        <div className="flex flex-col space-y-4 items-center justify-center p-6">
-          <h1 className="font-almost-black font-epilogue font-bold text-3xl">
-            Make remote work
-          </h1>
-          <h2 className="font-medium-gray font-epilogue text-sm">
-            Get your team in sync, no matter your location. Streamline
-            processes, create team rituals, and watch productivity soar.
-          </h2>
-        </div>
-        {/* Button Learn More */}
-        <div className="flex items-center justify-center">
-          <button className="bg-almost-black text-almost-white font-bold rounded-lg p-2">
-            Learn more
-          </button>
-        </div>
-        {/* Client Logos */}
-        <div className="flex flex-row items-center justify-between p-2">
-          <img
-            src={clientDatabiz}
-            alt="Client Databiz image"
-            className="h-4"
-          ></img>
-          <img
-            src={clientAudiophile}
-            alt="Client Audiophile image"
-            className="h-4"
-          ></img>
-          <img src={clientMeet} alt="Client Meet image" className="h-4"></img>
-          <img src={clientMaker} alt="Client Maker image" className="h-4"></img>
+        {/* Mobile Image Layout */}
+        <div className="mobile-layout">
+          <div>
+            <img
+              src={backgroundImageMobile}
+              alt="background"
+              className="background-image-mobile"
+            ></img>
+          </div>
+          {/* Copy Text */}
+          <div className="flex flex-col space-y-4 items-center justify-center p-6">
+            <h1 className="font-almost-black font-epilogue font-bold text-3xl">
+              Make remote work
+            </h1>
+            <h2 className="font-medium-gray font-epilogue text-sm">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </h2>
+          </div>
+          {/* Button Learn More */}
+          <div className="flex items-center justify-center">
+            <button className="bg-almost-black text-almost-white font-bold rounded-lg p-2">
+              Learn more
+            </button>
+          </div>
+          {/* Client Logos */}
+          <div className="flex flex-row items-center justify-between p-2">
+            <img
+              src={clientDatabiz}
+              alt="Client Databiz image"
+              className="h-4"
+            ></img>
+            <img
+              src={clientAudiophile}
+              alt="Client Audiophile image"
+              className="h-4"
+            ></img>
+            <img src={clientMeet} alt="Client Meet image" className="h-4"></img>
+            <img
+              src={clientMaker}
+              alt="Client Maker image"
+              className="h-4"
+            ></img>
+          </div>
         </div>
       </div>
     </>
