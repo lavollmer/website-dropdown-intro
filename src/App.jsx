@@ -187,99 +187,100 @@ function App() {
         </div>
         {/* Desktop Layout */}
         {/* Desktop Copy Text */}
-        {/* Sidebar Content */}
-        <nav className="fixed top-0 left-0 p-8 space-x-10 items-center font-bold text-md font-epilogue">
-          <img src={logo} alt="Snap logo" />
-          <div>
-            <div
-              className="flex flew-row items-center justify-between"
-              onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
-            >
-              <h2 className="text-medium-gray cursor-pointer">Features</h2>
-              <img
-                src={isFeaturesOpen ? upArrow : downArrow}
-                alt={isFeaturesOpen ? "Up Arrow Icon" : "Down Arrow Icon"}
-                className="w-4 h-2"
-              />
-            </div>
-            {isFeaturesOpen && (
-              <div className="flex flex-col ml-4 space-y-4">
-                <div className="flex flex-row space-x-2">
-                  <img src={todo} alt="todo icon" className="h-4 w-4" />
-                  <a href="#" className="text-medium-gray">
-                    Todo List
-                  </a>
-                </div>
-                <div className="flex flex-row space-x-2">
-                  <img src={calendar} alt="todo icon" className="h-4 w-4" />
-                  <a href="#" className="text-medium-gray">
-                    Calendar
-                  </a>
-                </div>
-                <div className="flex flex-row space-x-2">
-                  <img src={reminders} alt="todo icon" className="h-4 w-4" />
-                  <a href="#" className="text-medium-gray">
-                    Reminders
-                  </a>
-                </div>
-                <div className="flex flex-row space-x-2">
-                  <img src={planning} alt="todo icon" className="h-4 w-4" />
-                  <a href="#" className="text-medium-gray">
-                    Planning
-                  </a>
-                </div>
+        <div className="fixed top-0 left-0 p-8 space-x-10 items-center font-bold text-md font-epilogue">
+          <nav className="flex flex-row justify-between items-center space-x-10 w-full">
+            <div className="flex items-center">
+              <img src={logo} alt="Snap logo" />
+              <div
+                className="flex flew-row items-center justify-between"
+                onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
+              >
+                <h2 className="text-medium-gray cursor-pointer">Features</h2>
+                <img
+                  src={isFeaturesOpen ? upArrow : downArrow}
+                  alt={isFeaturesOpen ? "Up Arrow Icon" : "Down Arrow Icon"}
+                  className="w-4 h-2"
+                />
               </div>
-            )}
-            <div
-              className="flex flew-row items-center justify-between"
-              onClick={() => setIsCompanyOpen(!isCompanyOpen)}
-            >
-              <h2 className="text-medium-gray cursor-pointer">Company</h2>
-              <img
-                src={isFeaturesOpen ? upArrow : downArrow}
-                alt={isFeaturesOpen ? "Up Arrow Icon" : "Down Arrow Icon"}
-                className="w-4 h-2"
-              ></img>
-            </div>
-            {isCompanyOpen && (
-              <div className="flex flex-col ml-4 space-y-4">
-                <div className="flex flex-row space-x-2">
-                  <a href="#" className="text-medium-gray">
-                    History
-                  </a>
+              {isFeaturesOpen && (
+                <div className="flex flex-col ml-4 space-y-4">
+                  <div className="flex flex-row space-x-2">
+                    <img src={todo} alt="todo icon" className="h-4 w-4" />
+                    <a href="#" className="text-medium-gray">
+                      Todo List
+                    </a>
+                  </div>
+                  <div className="flex flex-row space-x-2">
+                    <img src={calendar} alt="todo icon" className="h-4 w-4" />
+                    <a href="#" className="text-medium-gray">
+                      Calendar
+                    </a>
+                  </div>
+                  <div className="flex flex-row space-x-2">
+                    <img src={reminders} alt="todo icon" className="h-4 w-4" />
+                    <a href="#" className="text-medium-gray">
+                      Reminders
+                    </a>
+                  </div>
+                  <div className="flex flex-row space-x-2">
+                    <img src={planning} alt="todo icon" className="h-4 w-4" />
+                    <a href="#" className="text-medium-gray">
+                      Planning
+                    </a>
+                  </div>
                 </div>
-                <div className="flex flex-row space-x-2">
-                  <a href="#" className="text-medium-gray">
-                    Team
-                  </a>
-                </div>
-                <div className="flex flex-row space-x-2">
-                  <a href="#" className="text-medium-gray">
-                    Blog
-                  </a>
-                </div>
+              )}
+              <div
+                className="flex flew-row items-center justify-between"
+                onClick={() => setIsCompanyOpen(!isCompanyOpen)}
+              >
+                <h2 className="text-medium-gray cursor-pointer">Company</h2>
+                <img
+                  src={isFeaturesOpen ? upArrow : downArrow}
+                  alt={isFeaturesOpen ? "Up Arrow Icon" : "Down Arrow Icon"}
+                  className="w-4 h-2"
+                ></img>
               </div>
-            )}
-            <div className="flex flex-row space-x-2">
-              <a href="#" className="text-medium-gray">
-                Careers
-              </a>
+              {isCompanyOpen && (
+                <div className="flex flex-col ml-4 space-y-4">
+                  <div className="flex flex-row space-x-2">
+                    <a href="#" className="text-medium-gray">
+                      History
+                    </a>
+                  </div>
+                  <div className="flex flex-row space-x-2">
+                    <a href="#" className="text-medium-gray">
+                      Team
+                    </a>
+                  </div>
+                  <div className="flex flex-row space-x-2">
+                    <a href="#" className="text-medium-gray">
+                      Blog
+                    </a>
+                  </div>
+                </div>
+              )}
+              <div className="flex flex-row space-x-2">
+                <a href="#" className="text-medium-gray">
+                  Careers
+                </a>
+              </div>
+              <div className="flex flex-row space-x-2">
+                <a href="#" className="text-medium-gray">
+                  About
+                </a>
+              </div>
+              <div className="flex flex-col p-6 font-md font-epilogue">
+                <button className="bg-almost-white text-medium-gray rounded-lg p-2">
+                  Login
+                </button>
+                <button className="bg-almost-white text-medium-gray rounded-lg p-2 border border-medium-gray">
+                  Register
+                </button>
+              </div>
             </div>
-            <div className="flex flex-row space-x-2">
-              <a href="#" className="text-medium-gray">
-                About
-              </a>
-            </div>
-            <div className="flex flex-col p-6 font-md font-epilogue">
-              <button className="bg-almost-white text-medium-gray rounded-lg p-2">
-                Login
-              </button>
-              <button className="bg-almost-white text-medium-gray rounded-lg p-2 border border-medium-gray">
-                Register
-              </button>
-            </div>
-          </div>
-        </nav>
+          </nav>
+        </div>
 
         <div className="grid-container">
           <div className="flex flex-col space-y-20 justify-start p-20 grid-item">
