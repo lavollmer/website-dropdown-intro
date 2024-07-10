@@ -9,6 +9,12 @@ import clientMaker from "./assets/client-maker.svg";
 import clientMeet from "./assets/client-meet.svg";
 import closeMenu from "./assets/icon-close-menu.svg";
 import { useState } from "react";
+import todo from "./assets/icon-todo.svg";
+import calendar from "./assets/icon-calendar.svg";
+import reminders from "./assets/icon-reminders.svg";
+import planning from "./assets/icon-planning.svg";
+import upArrow from "./assets/icon-arrow-up.svg";
+import downArrow from "./assets/icon-arrow-down.svg";
 
 function App() {
   // useState to toggle the sidebar - set to false by default
@@ -50,14 +56,21 @@ function App() {
           >
             {/* Sidebar Content */}
             <div className="flex flex-col m-14 space-y-4 font-bold text-md font-epilogue">
-              <h2 className="text-medium-gray cursor-pointer onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}">
-                Features
-              </h2>
+              <div
+                className="flex flew-row items-center justify-between"
+                onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
+              >
+                <h2 className="text-medium-gray cursor-pointer">Features</h2>
+                <img src={downArrow} alt="down arrow" className="w-4 h-2"></img>
+              </div>
               {isFeaturesOpen && (
                 <div className="flex flex-col ml-4 space-y-2">
-                  <a href="#" className="text-medium-gray">
-                    Todo List
-                  </a>
+                  <div className="flex flex-row space-x-2">
+                    <img src={todo} alt="todo icon" className="h-4 w-4"></img>
+                    <a href="#" className="text-medium-gray">
+                      Todo List
+                    </a>
+                  </div>
                   <a href="#" className="text-medium-gray">
                     Calendar
                   </a>
