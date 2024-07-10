@@ -62,7 +62,7 @@ function App() {
                 onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
               >
                 <h2 className="text-medium-gray cursor-pointer">Features</h2>
-                <img src={downArrow} alt="down arrow" className="w-4 h-2"></img>
+                <img src={isFeaturesOpen ? upArrow : downArrow} alt={isFeaturesOpen ? "Up Arrow Icon" : "Down Arrow Icon"} className="w-4 h-2"></img>
               </div>
               {isFeaturesOpen && (
                 <div className="flex flex-col ml-4 space-y-4">
@@ -109,7 +109,7 @@ function App() {
                 onClick={() => setIsCompanyOpen(!isCompanyOpen)}
               >
                 <h2 className="text-medium-gray cursor-pointer">Company</h2>
-                <img src={downArrow} alt="down arrow" className="w-4 h-2"></img>
+                <img src={isFeaturesOpen ? upArrow : downArrow} alt={isFeaturesOpen ? "Up Arrow Icon" : "Down Arrow Icon"} className="w-4 h-2"></img>
               </div>
               {isCompanyOpen && (
                 <div className="flex flex-col ml-4 space-y-4">
