@@ -27,12 +27,12 @@ function App() {
     <>
       <div className="space-y-4 bg-almost-white min-h-screen">
         {/* Header */}
-        <div className="flex flex-row items-center justify-between pt-6 pl-6 pr-6 nav-sidebar">
-          <div>
+        <div className="flex flex-row items-center justify-between pt-6 pl-6 pr-6">
+          <div className="mobile-logo">
             <img src={logo} alt="Snap logo" />
           </div>
-          <div className={`flex ${isOpen ? "w-72" : "w-20"} bg-almost-white  `}>
-            <div className="absolute top-0 right-0 pt-6 pr-6 z-50">
+          <div className={`flex ${isOpen ? "w-72" : "w-20"} bg-almost-white`}>
+            <div className="absolute top-0 right-0 pt-6 pr-6 z-50 nav-sidebar">
               <img
                 // Ternary operator - Toggle the hamburger/close menu icon based on the isOpen state
                 // if isOpen is true, show the close menu icon, else show the hamburger icon
@@ -188,7 +188,7 @@ function App() {
         {/* Desktop Layout */}
         {/* Desktop Copy Text */}
         {/* Sidebar Content */}
-        <nav className="flex flex-row p-8 space-x-10 items-center font-bold text-md font-epilogue">
+        <nav className="fixed top-0 left-0 p-8 space-x-10 items-center font-bold text-md font-epilogue">
           <img src={logo} alt="Snap logo" />
           <div>
             <div
@@ -260,8 +260,16 @@ function App() {
                 </div>
               </div>
             )}
-            <h2>Careers</h2>
-            <h2>About</h2>
+            <div className="flex flex-row space-x-2">
+              <a href="#" className="text-medium-gray">
+                Careers
+              </a>
+            </div>
+            <div className="flex flex-row space-x-2">
+              <a href="#" className="text-medium-gray">
+                About
+              </a>
+            </div>
             <div className="flex flex-col p-6 font-md font-epilogue">
               <button className="bg-almost-white text-medium-gray rounded-lg p-2">
                 Login
@@ -273,47 +281,52 @@ function App() {
           </div>
         </nav>
 
-      <div className="grid-container">
-        <div className="flex flex-col space-y-20 justify-start p-20 grid-item">
-          <h1 className="font-almost-black font-epilogue font-bold text-6xl">
-            Make remote work
-          </h1>
-          <h2 className="font-medium-gray font-epilogue text-lg">
-            Get your team in sync, no matter your location. Streamline
-            processes, create team rituals, and watch productivity soar.
-          </h2>
-          {/* Button Learn More */}
-          <div className="flex items-center">
-            <button className="bg-almost-black text-almost-white font-bold rounded-lg p-2">
-              Learn more
-            </button>
+        <div className="grid-container">
+          <div className="flex flex-col space-y-20 justify-start p-20 grid-item">
+            <h1 className="font-almost-black font-epilogue font-bold text-6xl">
+              Make remote work
+            </h1>
+            <h2 className="font-medium-gray font-epilogue text-lg">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </h2>
+            {/* Button Learn More */}
+            <div className="flex items-center">
+              <button className="bg-almost-black text-almost-white font-bold rounded-lg p-2">
+                Learn more
+              </button>
+            </div>
+            {/* Client Logos */}
+            <div className="flex flex-row justify-between">
+              <img
+                src={clientDatabiz}
+                alt="Client Databiz image"
+                className="h-8"
+              ></img>
+              <img
+                src={clientAudiophile}
+                alt="Client Audiophile image"
+                className="h-8"
+              ></img>
+              <img
+                src={clientMeet}
+                alt="Client Meet image"
+                className="h-8"
+              ></img>
+              <img
+                src={clientMaker}
+                alt="Client Maker image"
+                className="h-8"
+              ></img>
+            </div>
           </div>
-          {/* Client Logos */}
-          <div className="flex flex-row justify-between">
+          <div className="grid-item">
             <img
-              src={clientDatabiz}
-              alt="Client Databiz image"
-              className="h-8"
-            ></img>
-            <img
-              src={clientAudiophile}
-              alt="Client Audiophile image"
-              className="h-8"
-            ></img>
-            <img src={clientMeet} alt="Client Meet image" className="h-8"></img>
-            <img
-              src={clientMaker}
-              alt="Client Maker image"
-              className="h-8"
+              src={backgroundDesktopImage}
+              alt="Desktop background image"
+              className="flex-grow w-full h-full object-cover"
             ></img>
           </div>
-        </div>
-        <div className="grid-item">
-          <img
-            src={backgroundDesktopImage}
-            alt="Desktop background image"
-            className="flex-grow w-full h-full object-cover"
-          ></img>
         </div>
       </div>
     </>

@@ -6,6 +6,9 @@
   .mobile-layout {
     display: none;
     }
+    .mobile-logo {
+      display:none
+    }
 }
 
 .grid-container {
