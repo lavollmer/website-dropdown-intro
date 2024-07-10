@@ -3,6 +3,7 @@ import "./index.css";
 import logo from "./assets/logo.svg";
 import hamburger from "./assets/icon-menu.svg";
 import backgroundImageMobile from "./assets/image-hero-mobile.png";
+import backgroundDesktopImage from "./assets/image-hero-desktop.png";
 import clientAudiophile from "./assets/client-audiophile.svg";
 import clientDatabiz from "./assets/client-databiz.svg";
 import clientMaker from "./assets/client-maker.svg";
@@ -28,10 +29,10 @@ function App() {
         {/* Header */}
         <div className="flex flex-row items-center justify-between pt-6 pl-6 pr-6">
           <div>
-            <img src={logo} alt="Snap logo"></img>
+            <img src={logo} alt="Snap logo"/>
           </div>
-          <div className={`flex ${isOpen ? "w-72" : "w-20"} bg-almost-white`}>
-            <div className="absolute top-0 right-0 pt-6 pr-6 z-50">
+          <div className={`flex ${isOpen ? "w-72" : "w-20"} bg-almost-white  `}>
+            <div className="absolute top-0 right-0 pt-6 pr-6 z-50 nav-sidebar">
               <img
                 // Ternary operator - Toggle the hamburger/close menu icon based on the isOpen state
                 // if isOpen is true, show the close menu icon, else show the hamburger icon
@@ -41,11 +42,11 @@ function App() {
                 // onClick event handler - when user clicks on the element, it listens and toggles the isOpen state
                 // if isOpen is true, it will set to false, else it will set to true
                 onClick={() => setIsOpen(!isOpen)}
-              ></img>
+              />
             </div>
           </div>
           {/* Sidebar */}
-          <div class="nav-sidebar"
+          <div 
             className={`text-medium-gray fixed top-0 right-0 w-64 bg-almost-white transition-transform duration-500 overflow-hidden ${
               isOpen ? "translate-x-0" : "translate-x-full"
             } h-screen`}
@@ -62,12 +63,12 @@ function App() {
                 onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
               >
                 <h2 className="text-medium-gray cursor-pointer">Features</h2>
-                <img src={isFeaturesOpen ? upArrow : downArrow} alt={isFeaturesOpen ? "Up Arrow Icon" : "Down Arrow Icon"} className="w-4 h-2"></img>
+                <img src={isFeaturesOpen ? upArrow : downArrow} alt={isFeaturesOpen ? "Up Arrow Icon" : "Down Arrow Icon"} className="w-4 h-2"/>
               </div>
               {isFeaturesOpen && (
                 <div className="flex flex-col ml-4 space-y-4">
                   <div className="flex flex-row space-x-2">
-                    <img src={todo} alt="todo icon" className="h-4 w-4"></img>
+                    <img src={todo} alt="todo icon" className="h-4 w-4"/>
                     <a href="#" className="text-medium-gray">
                       Todo List
                     </a>
@@ -77,7 +78,7 @@ function App() {
                       src={calendar}
                       alt="todo icon"
                       className="h-4 w-4"
-                    ></img>
+                    />
                     <a href="#" className="text-medium-gray">
                       Calendar
                     </a>
@@ -87,7 +88,7 @@ function App() {
                       src={reminders}
                       alt="todo icon"
                       className="h-4 w-4"
-                    ></img>
+                    />
                     <a href="#" className="text-medium-gray">
                       Reminders
                     </a>
@@ -97,7 +98,7 @@ function App() {
                       src={planning}
                       alt="todo icon"
                       className="h-4 w-4"
-                    ></img>
+                    />
                     <a href="#" className="text-medium-gray">
                       Planning
                     </a>
