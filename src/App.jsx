@@ -71,15 +71,36 @@ function App() {
                       Todo List
                     </a>
                   </div>
-                  <a href="#" className="text-medium-gray">
-                    Calendar
-                  </a>
-                  <a href="#" className="text-medium-gray">
-                    Reminders
-                  </a>
-                  <a href="#" className="text-medium-gray">
-                    Planning
-                  </a>
+                  <div className="flex flex-row space-x-2">
+                    <img
+                      src={calendar}
+                      alt="todo icon"
+                      className="h-4 w-4"
+                    ></img>
+                    <a href="#" className="text-medium-gray">
+                      Calendar
+                    </a>
+                  </div>
+                  <div className="flex flex-row space-x-2">
+                    <img
+                      src={reminders}
+                      alt="todo icon"
+                      className="h-4 w-4"
+                    ></img>
+                    <a href="#" className="text-medium-gray">
+                      Reminders
+                    </a>
+                  </div>
+                  <div className="flex flex-row space-x-2">
+                    <img
+                      src={planning}
+                      alt="todo icon"
+                      className="h-4 w-4"
+                    ></img>
+                    <a href="#" className="text-medium-gray">
+                      Planning
+                    </a>
+                  </div>
                 </div>
               )}
 
