@@ -45,7 +45,7 @@ function App() {
             </div>
           </div>
           {/* Sidebar */}
-          <div
+          <div class="nav-sidebar"
             className={`text-medium-gray fixed top-0 right-0 w-64 bg-almost-white transition-transform duration-500 overflow-hidden ${
               isOpen ? "translate-x-0" : "translate-x-full"
             } h-screen`}
