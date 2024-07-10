@@ -22,33 +22,47 @@ function App() {
           <div>
             <img src={logo} alt="Snap logo"></img>
           </div>
-            <div className={`flex ${isOpen ? "w-72" : "w-20"} bg-almost-white`}>
-              <div className="absolute top-0 right-0 pt-6 pr-6 z-50">
-                <img
-                  // Ternary operator - Toggle the hamburger/close menu icon based on the isOpen state
-                  // if isOpen is true, show the close menu icon, else show the hamburger icon
-                  src={isOpen ? closeMenu : hamburger}
-                  alt={isOpen ? "Close menu" : "Open menu"}
-                  className="cursor-pointer"
-                  // onClick event handler - when user clicks on the element, it listens and toggles the isOpen state
-                  // if isOpen is true, it will set to false, else it will set to true
-                  onClick={() => setIsOpen(!isOpen)}
-                ></img>
+          <div className={`flex ${isOpen ? "w-72" : "w-20"} bg-almost-white`}>
+            <div className="absolute top-0 right-0 pt-6 pr-6 z-50">
+              <img
+                // Ternary operator - Toggle the hamburger/close menu icon based on the isOpen state
+                // if isOpen is true, show the close menu icon, else show the hamburger icon
+                src={isOpen ? closeMenu : hamburger}
+                alt={isOpen ? "Close menu" : "Open menu"}
+                className="cursor-pointer"
+                // onClick event handler - when user clicks on the element, it listens and toggles the isOpen state
+                // if isOpen is true, it will set to false, else it will set to true
+                onClick={() => setIsOpen(!isOpen)}
+              ></img>
+            </div>
+          </div>
+          {/* Sidebar */}
+          <div
+            className={`fixed top-0 right-0 w-64 bg-almost-white transition-transform duration-500 overflow-hidden ${
+              isOpen ? "translate-x-0" : "translate-x-full"
+            } h-screen`}
+            style={{
+              width: "18rem",
+              transitionProperty: "transform",
+              transitionDuration: "500ms",
+            }}
+          >
+            {/* Sidebar Content */}
+            <div className="flex flex-col m-14 space-y-4 font-bold">
+              <h2 className="medium-gray">Features</h2>
+              <h2>Company</h2>
+              <h2>Careers</h2>
+              <h2>About</h2>
+              <div className="flex flex-col p-6">
+                <button className="bg-almost-white text-medium-gray rounded-lg p-2">
+                  Login
+                </button>
+                <button className="bg-almost-white text-medium-gray rounded-lg p-2 border border-medium-gray">
+                  Register
+                </button>
               </div>
             </div>
-            {/* Sidebar */}
-            <div
-              className={`fixed top-0 right-0 w-72 bg-almost-white transition-transform duration-500 overflow-hidden ${
-                isOpen ? "translate-x-0" : "translate-x-full"
-              } h-screen`}
-              style={{
-                width: "18rem",
-                transitionProperty: "transform",
-                transitionDuration: "500ms",
-              }}
-            >
-              {/* Sidebar Content */}
-            </div>
+          </div>
         </div>
         {/* Background Image */}
         <div>
