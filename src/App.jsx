@@ -185,6 +185,53 @@ function App() {
             ></img>
           </div>
         </div>
+        {/* Desktop Layout */}
+        {/* Desktop Copy Text */}
+        <div className="grid-container">
+          <div className="flex flex-col justify-start space-y-4 items-left justify-left p-20 grid-item">
+            <h1 className="font-almost-black font-epilogue font-bold text-6xl">
+              Make remote work
+            </h1>
+            <h2 className="font-medium-gray font-epilogue text-lg">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </h2>
+            {/* Button Learn More */}
+            <button className="bg-almost-black text-almost-white font-bold rounded-lg p-2">
+              Learn more
+            </button>
+            {/* Client Logos */}
+            <div className="flex flex-row justify-between">
+              <img
+                src={clientDatabiz}
+                alt="Client Databiz image"
+                className="h-8"
+              ></img>
+              <img
+                src={clientAudiophile}
+                alt="Client Audiophile image"
+                className="h-8"
+              ></img>
+              <img
+                src={clientMeet}
+                alt="Client Meet image"
+                className="h-8"
+              ></img>
+              <img
+                src={clientMaker}
+                alt="Client Maker image"
+                className="h-8"
+              ></img>
+            </div>
+          </div>
+          <div className="grid-item">
+            <img
+              src={backgroundDesktopImage}
+              alt="Desktop background image"
+              className="h-80 w-80"
+            ></img>
+          </div>
+        </div>
       </div>
     </>
   );

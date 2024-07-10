@@ -7,3 +7,15 @@
     display: none;
     }
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Creates 2 columns of equal width */
+  gap: 10px; /* Optional: Adds space between grid items */
+}
+
+.grid-item {
+  /* Style your grid items here */
+  padding: 20px;
+  border: 1px solid #ccc;
+}
