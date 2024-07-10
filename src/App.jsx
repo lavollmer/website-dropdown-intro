@@ -20,6 +20,7 @@ function App() {
   // useState to toggle the sidebar - set to false by default
   const [isOpen, setIsOpen] = useState(false);
   const [isFeaturesOpen, setIsFeaturesOpen] = useState(false);
+  const [isCompanyOpen, setIsCompanyOpen] = useState(false);
 
   return (
     <>
@@ -105,12 +106,12 @@ function App() {
               )}
               <div
                 className="flex flew-row items-center justify-between"
-                onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
+                onClick={() => setIsCompanyOpen(!isCompanyOpen)}
               >
                 <h2 className="text-medium-gray cursor-pointer">Company</h2>
                 <img src={downArrow} alt="down arrow" className="w-4 h-2"></img>
               </div>
-              {isFeaturesOpen && (
+              {isCompanyOpen && (
                 <div className="flex flex-col ml-4 space-y-2">
                   <div className="flex flex-row space-x-2">
                     <a href="#" className="text-medium-gray">
