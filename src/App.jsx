@@ -56,7 +56,7 @@ function App() {
             }}
           >
             {/* Sidebar Content */}
-            <div className="flex flex-col m-14 space-y-4 font-bold text-md font-epilogue">
+            <div className="flex flex-col mt-20 p-8 space-y-10 font-bold text-md font-epilogue">
               <div
                 className="flex flew-row items-center justify-between"
                 onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
@@ -65,7 +65,7 @@ function App() {
                 <img src={downArrow} alt="down arrow" className="w-4 h-2"></img>
               </div>
               {isFeaturesOpen && (
-                <div className="flex flex-col ml-4 space-y-2">
+                <div className="flex flex-col ml-4 space-y-4">
                   <div className="flex flex-row space-x-2">
                     <img src={todo} alt="todo icon" className="h-4 w-4"></img>
                     <a href="#" className="text-medium-gray">
@@ -112,7 +112,7 @@ function App() {
                 <img src={downArrow} alt="down arrow" className="w-4 h-2"></img>
               </div>
               {isCompanyOpen && (
-                <div className="flex flex-col ml-4 space-y-2">
+                <div className="flex flex-col ml-4 space-y-4">
                   <div className="flex flex-row space-x-2">
                     <a href="#" className="text-medium-gray">
                       History
@@ -132,7 +132,7 @@ function App() {
               )}
               <h2>Careers</h2>
               <h2>About</h2>
-              <div className="flex flex-col p-6">
+              <div className="flex flex-col p-6 font-md font-epilogue">
                 <button className="bg-almost-white text-medium-gray rounded-lg p-2">
                   Login
                 </button>
