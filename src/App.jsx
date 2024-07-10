@@ -187,52 +187,131 @@ function App() {
         </div>
         {/* Desktop Layout */}
         {/* Desktop Copy Text */}
-        <div className="grid-container">
-          <div className="flex flex-col space-y-20 justify-start p-20 grid-item">
-            <h1 className="font-almost-black font-epilogue font-bold text-6xl">
-              Make remote work
-            </h1>
-            <h2 className="font-medium-gray font-epilogue text-lg">
-              Get your team in sync, no matter your location. Streamline
-              processes, create team rituals, and watch productivity soar.
-            </h2>
-            {/* Button Learn More */}
-            <div className="flex items-center">
-              <button className="bg-almost-black text-almost-white font-bold rounded-lg p-2">
-                Learn more
-              </button>
-            </div>
-            {/* Client Logos */}
-            <div className="flex flex-row justify-between">
-              <img
-                src={clientDatabiz}
-                alt="Client Databiz image"
-                className="h-8"
-              ></img>
-              <img
-                src={clientAudiophile}
-                alt="Client Audiophile image"
-                className="h-8"
-              ></img>
-              <img
-                src={clientMeet}
-                alt="Client Meet image"
-                className="h-8"
-              ></img>
-              <img
-                src={clientMaker}
-                alt="Client Maker image"
-                className="h-8"
-              ></img>
-            </div>
-          </div>
-          <div className="grid-item">
+        {/* Sidebar Content */}
+        <div className="flex flex-row p-8 space-x-10 items-center font-bold text-md font-epilogue">
+          <div
+            className="flex flew-row items-center justify-between"
+            onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
+          >
+            <h2 className="text-medium-gray cursor-pointer">Features</h2>
             <img
-              src={backgroundDesktopImage}
-              alt="Desktop background image"
-              className="flex-grow w-full h-full object-cover"
+              src={isFeaturesOpen ? upArrow : downArrow}
+              alt={isFeaturesOpen ? "Up Arrow Icon" : "Down Arrow Icon"}
+              className="w-4 h-2"
+            />
+          </div>
+          {isFeaturesOpen && (
+            <div className="flex flex-col ml-4 space-y-4">
+              <div className="flex flex-row space-x-2">
+                <img src={todo} alt="todo icon" className="h-4 w-4" />
+                <a href="#" className="text-medium-gray">
+                  Todo List
+                </a>
+              </div>
+              <div className="flex flex-row space-x-2">
+                <img src={calendar} alt="todo icon" className="h-4 w-4" />
+                <a href="#" className="text-medium-gray">
+                  Calendar
+                </a>
+              </div>
+              <div className="flex flex-row space-x-2">
+                <img src={reminders} alt="todo icon" className="h-4 w-4" />
+                <a href="#" className="text-medium-gray">
+                  Reminders
+                </a>
+              </div>
+              <div className="flex flex-row space-x-2">
+                <img src={planning} alt="todo icon" className="h-4 w-4" />
+                <a href="#" className="text-medium-gray">
+                  Planning
+                </a>
+              </div>
+            </div>
+          )}
+          <div
+            className="flex flew-row items-center justify-between"
+            onClick={() => setIsCompanyOpen(!isCompanyOpen)}
+          >
+            <h2 className="text-medium-gray cursor-pointer">Company</h2>
+            <img
+              src={isFeaturesOpen ? upArrow : downArrow}
+              alt={isFeaturesOpen ? "Up Arrow Icon" : "Down Arrow Icon"}
+              className="w-4 h-2"
             ></img>
           </div>
+          {isCompanyOpen && (
+            <div className="flex flex-col ml-4 space-y-4">
+              <div className="flex flex-row space-x-2">
+                <a href="#" className="text-medium-gray">
+                  History
+                </a>
+              </div>
+              <div className="flex flex-row space-x-2">
+                <a href="#" className="text-medium-gray">
+                  Team
+                </a>
+              </div>
+              <div className="flex flex-row space-x-2">
+                <a href="#" className="text-medium-gray">
+                  Blog
+                </a>
+              </div>
+            </div>
+          )}
+          <h2>Careers</h2>
+          <h2>About</h2>
+          <div className="flex flex-col p-6 font-md font-epilogue">
+            <button className="bg-almost-white text-medium-gray rounded-lg p-2">
+              Login
+            </button>
+            <button className="bg-almost-white text-medium-gray rounded-lg p-2 border border-medium-gray">
+              Register
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className="grid-container">
+        <div className="flex flex-col space-y-20 justify-start p-20 grid-item">
+          <h1 className="font-almost-black font-epilogue font-bold text-6xl">
+            Make remote work
+          </h1>
+          <h2 className="font-medium-gray font-epilogue text-lg">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </h2>
+          {/* Button Learn More */}
+          <div className="flex items-center">
+            <button className="bg-almost-black text-almost-white font-bold rounded-lg p-2">
+              Learn more
+            </button>
+          </div>
+          {/* Client Logos */}
+          <div className="flex flex-row justify-between">
+            <img
+              src={clientDatabiz}
+              alt="Client Databiz image"
+              className="h-8"
+            ></img>
+            <img
+              src={clientAudiophile}
+              alt="Client Audiophile image"
+              className="h-8"
+            ></img>
+            <img src={clientMeet} alt="Client Meet image" className="h-8"></img>
+            <img
+              src={clientMaker}
+              alt="Client Maker image"
+              className="h-8"
+            ></img>
+          </div>
+        </div>
+        <div className="grid-item">
+          <img
+            src={backgroundDesktopImage}
+            alt="Desktop background image"
+            className="flex-grow w-full h-full object-cover"
+          ></img>
         </div>
       </div>
     </>
