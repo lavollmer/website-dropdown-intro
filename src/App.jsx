@@ -29,7 +29,7 @@ function App() {
         {/* Header */}
         <div className="flex flex-row items-center">
           <div className="mobile-logo">
-            <img src={logo} alt="Snap logo" />
+            <img src={logo} alt="Snap logo" className="p-6" />
           </div>
           <div className={`flex ${isOpen ? "w-72" : "w-20"} bg-almost-white`}>
             <div className="absolute top-0 right-0 pt-6 pr-6 z-50 nav-sidebar">
@@ -146,15 +146,14 @@ function App() {
             <img
               src={backgroundImageMobile}
               alt="background"
-              className="background-image-mobile"
-            ></img>
+              className="background-image-mobile"/>
           </div>
           {/* Copy Text */}
           <div className="flex flex-col space-y-4 items-center justify-center p-6">
             <h1 className="font-almost-black font-epilogue font-bold text-3xl">
               Make remote work
             </h1>
-            <h2 className="font-medium-gray font-epilogue text-sm">
+            <h2 className="text-medium-gray font-epilogue text-sm text-center">
               Get your team in sync, no matter your location. Streamline
               processes, create team rituals, and watch productivity soar.
             </h2>
@@ -166,7 +165,7 @@ function App() {
             </button>
           </div>
           {/* Client Logos */}
-          <div className="flex flex-row items-center justify-between p-2">
+          <div className="flex flex-row items-center justify-between p-2 mt-6">
             <img
               src={clientDatabiz}
               alt="Client Databiz image"
