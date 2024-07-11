@@ -188,7 +188,7 @@ function App() {
 
         {/* Desktop Layout */}
         {/* Desktop Copy Text */}
-        <div className="fixed top-0 left-0 right-0 w-full z-50 bg-white shadow-md p-10">
+        <div className="fixed top-0 left-0 right-0 w-full z-50 bg-almost-white p-10">
           <div className="flex flex-row items-center text-md font-epilogue justify-between">
             <img src={logo} alt="Snap logo" />
             <div className="flex items-center space-x-20 ml-10">
@@ -205,7 +205,7 @@ function App() {
                   />
                 </div>
                 {isFeaturesOpen && (
-                  <div className="absolute z-10 mt-1 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-medium-gray">
+                  <div className="absolute z-10 mt-1 bg-almost-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-medium-gray">
                     <ul
                       className="py-2 text-sm text-medium-gray dark:text-medium-gray m-2"
                       aria-labelledby="dropdownDefaultButton"
@@ -275,7 +275,7 @@ function App() {
                   ></img>
                 </div>
                 {isCompanyOpen && (
-                  <div className="absolute z-10 mt-1 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-medium-gray">
+                  <div className="absolute z-10 mt-1 bg-almost-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-medium-gray">
                     <ul
                       className="py-2 text-sm text-medium-gray dark:text-medium-gray m-2"
                       aria-labelledby="dropdownDefaultButton"
@@ -333,7 +333,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="grid-container">
+        <div className="grid-container" style={{ marginTop: '140px' }}>
           <div className="flex flex-col space-y-20 justify-start p-20 grid-item">
             <h1 className="font-almost-black font-epilogue font-bold text-6xl">
               Make remote work
