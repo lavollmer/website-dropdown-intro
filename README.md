@@ -18,17 +18,37 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
 
 ## Overview
 
-### The challenge
-
-Users should be able to:
-
-- View the relevant dropdown menus on desktop and mobile when interacting with the navigation links
-- View the optimal layout for the content depending on their device's screen size
-- See hover states for all interactive elements on the page
+This project was an exercise in creating an introductory web page featuring a dropdown menu that adapts to both desktop and mobile interfaces. The challenge was to implement hover states for all interactive elements, ensuring a seamless user experience across different devices. Key skills applied in this project included the use of flexbox for layout management, TailwindCSS for styling, and ReactJS for dynamic state management. The project aimed to refine my understanding of responsive design, emphasizing desktop and mobile compatibility.
 
 ### Screenshot
 
-![](./screenshot.jpg)
+Desktop View:
+
+![Desktop View](./src/assets/screenshots/DesktopView.png)
+
+Desktop Features Dropdown View:
+
+![Desktop Features Dropdown Menu](./src/assets/screenshots/DesktopDropdownFeatures.png)
+
+Desktop Company Dropdown View:
+
+![Desktop Company Dropdown Menu](./src/assets/screenshots/DesktopCompanyDropdown.png)
+
+Mobile View:
+
+![Mobile View](./src/assets/screenshots/MobileView.png)
+
+Mobile Sidebar Navigation View:
+
+![Mobile Sidebar Navigation](./src/assets/screenshots/SidebarNavigationView.png)
+
+Mobile Sidebar Navigation Features Dropdown View:
+
+![Mobile Sidebar Navigation Features Dropdown](./src/assets/screenshots/MobileFeaturesSidebarNavigation.png)
+
+Mobile Sidebar Navigation Company Dropdown View:
+
+![Mobile Sidebar Navigation Company Dropdown](./src/assets/screenshots/SidebarNavigationViewCompanyMobile.png)
 
 ### Links
 
