@@ -190,9 +190,9 @@ function App() {
         <div className="flex p-8 items-center justify-between font-bold text-md font-epilogue">
           <nav className="fixed top-0 left-0 items-center">
             <div className="flex flex-row items-center space-x-20">
-              <img src={logo} alt="Snap logo" />
+              <img src={logo} alt="Snap logo" className="ml-10" />
               <div
-                className="flex flew-row items-center justify-between"
+                className="flex flew-row items-center"
                 onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
               >
                 <h2 className="text-medium-gray cursor-pointer">Features</h2>
@@ -203,31 +203,37 @@ function App() {
                 />
               </div>
               {isFeaturesOpen && (
-                <div className="flex flex-col ml-4 space-y-4">
-                  <div className="flex flex-row space-x-2">
-                    <img src={todo} alt="todo icon" className="h-4 w-4" />
-                    <a href="#" className="text-medium-gray">
-                      Todo List
-                    </a>
-                  </div>
-                  <div className="flex flex-row space-x-2">
-                    <img src={calendar} alt="todo icon" className="h-4 w-4" />
-                    <a href="#" className="text-medium-gray">
-                      Calendar
-                    </a>
-                  </div>
-                  <div className="flex flex-row space-x-2">
-                    <img src={reminders} alt="todo icon" className="h-4 w-4" />
-                    <a href="#" className="text-medium-gray">
-                      Reminders
-                    </a>
-                  </div>
-                  <div className="flex flex-row space-x-2">
-                    <img src={planning} alt="todo icon" className="h-4 w-4" />
-                    <a href="#" className="text-medium-gray">
-                      Planning
-                    </a>
-                  </div>
+                <div className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                  <ul className="flex flex-col ml-4 space-y-4">
+                    <li className="flex flex-row space-x-2">
+                      <img src={todo} alt="todo icon" className="h-4 w-4" />
+                      <a href="#" className="text-medium-gray">
+                        Todo List
+                      </a>
+                    </li>
+                    <li className="flex flex-row space-x-2">
+                      <img src={calendar} alt="todo icon" className="h-4 w-4" />
+                      <a href="#" className="text-medium-gray">
+                        Calendar
+                      </a>
+                    </li>
+                    <li className="flex flex-row space-x-2">
+                      <img
+                        src={reminders}
+                        alt="todo icon"
+                        className="h-4 w-4"
+                      />
+                      <a href="#" className="text-medium-gray">
+                        Reminders
+                      </a>
+                    </li>
+                    <li className="flex flex-row space-x-2">
+                      <img src={planning} alt="todo icon" className="h-4 w-4" />
+                      <a href="#" className="text-medium-gray">
+                        Planning
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               )}
               <div
