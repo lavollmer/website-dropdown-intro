@@ -188,196 +188,200 @@ function App() {
 
         {/* Desktop Layout */}
         {/* Desktop Copy Text */}
-        <div className="fixed top-0 left-0 right-0 w-full z-50 bg-almost-white p-10">
-          <div className="flex flex-row items-center text-md font-epilogue justify-between">
-            <img src={logo} alt="Snap logo" />
-            <div className="flex items-center space-x-20 ml-10">
-              <div
-                className="relative"
-                onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
-              >
-                <div className="flex flex-row items-center">
-                  <h2 className="text-medium-gray cursor-pointer">Features</h2>
-                  <img
-                    src={isFeaturesOpen ? upArrow : downArrow}
-                    alt={isFeaturesOpen ? "Up Arrow Icon" : "Down Arrow Icon"}
-                    className="w-4 h-2"
-                  />
-                </div>
-                {isFeaturesOpen && (
-                  <div className="absolute z-10 mt-1 bg-almost-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-medium-gray">
-                    <ul
-                      className="py-2 text-sm text-medium-gray dark:text-medium-gray m-2"
-                      aria-labelledby="dropdownDefaultButton"
-                    >
-                      <li className="flex flex-row items-center space-x-2">
-                        <img src={todo} alt="todo icon" className="h-4 w-4" />
-                        <a
-                          href="#"
-                          className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-medium-gray"
-                        >
-                          Todo List
-                        </a>
-                      </li>
-                      <li className="flex flex-row items-center space-x-2">
-                        <img
-                          src={calendar}
-                          alt="todo icon"
-                          className="h-4 w-4"
-                        />
-                        <a
-                          href="#"
-                          className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-medium-gray"
-                        >
-                          Calendar
-                        </a>
-                      </li>
-                      <li className="flex flex-row items-center space-x-2">
-                        <img
-                          src={reminders}
-                          alt="todo icon"
-                          className="h-4 w-4"
-                        />
-                        <a
-                          href="#"
-                          className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-medium-gray"
-                        >
-                          Reminders
-                        </a>
-                      </li>
-                      <li className="flex flex-row items-center space-x-2">
-                        <img
-                          src={planning}
-                          alt="todo icon"
-                          className="h-4 w-4"
-                        />
-                        <a
-                          href="#"
-                          className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-medium-gray"
-                        >
-                          Planning
-                        </a>
-                      </li>
-                    </ul>
+        <div className="desktop-layout">
+          <div className="fixed top-0 left-0 right-0 w-full z-50 bg-almost-white p-10">
+            <div className="flex flex-row items-center text-md font-epilogue justify-between">
+              <img src={logo} alt="Snap logo" />
+              <div className="flex items-center space-x-20 ml-10">
+                <div
+                  className="relative"
+                  onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
+                >
+                  <div className="flex flex-row items-center">
+                    <h2 className="text-medium-gray cursor-pointer">
+                      Features
+                    </h2>
+                    <img
+                      src={isFeaturesOpen ? upArrow : downArrow}
+                      alt={isFeaturesOpen ? "Up Arrow Icon" : "Down Arrow Icon"}
+                      className="w-4 h-2"
+                    />
                   </div>
-                )}
-              </div>
-              <div
-                className="relative"
-                onClick={() => setIsCompanyOpen(!isCompanyOpen)}
-              >
-                <div className="flex flex-row items-center">
-                  <h2 className="text-medium-gray cursor-pointer">Company</h2>
-                  <img
-                    src={isCompanyOpen ? upArrow : downArrow}
-                    alt={isCompanyOpen ? "Up Arrow Icon" : "Down Arrow Icon"}
-                    className="w-4 h-2"
-                  ></img>
+                  {isFeaturesOpen && (
+                    <div className="absolute z-10 mt-1 bg-almost-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-medium-gray">
+                      <ul
+                        className="py-2 text-sm text-medium-gray dark:text-medium-gray m-2"
+                        aria-labelledby="dropdownDefaultButton"
+                      >
+                        <li className="flex flex-row items-center space-x-2">
+                          <img src={todo} alt="todo icon" className="h-4 w-4" />
+                          <a
+                            href="#"
+                            className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-medium-gray"
+                          >
+                            Todo List
+                          </a>
+                        </li>
+                        <li className="flex flex-row items-center space-x-2">
+                          <img
+                            src={calendar}
+                            alt="todo icon"
+                            className="h-4 w-4"
+                          />
+                          <a
+                            href="#"
+                            className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-medium-gray"
+                          >
+                            Calendar
+                          </a>
+                        </li>
+                        <li className="flex flex-row items-center space-x-2">
+                          <img
+                            src={reminders}
+                            alt="todo icon"
+                            className="h-4 w-4"
+                          />
+                          <a
+                            href="#"
+                            className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-medium-gray"
+                          >
+                            Reminders
+                          </a>
+                        </li>
+                        <li className="flex flex-row items-center space-x-2">
+                          <img
+                            src={planning}
+                            alt="todo icon"
+                            className="h-4 w-4"
+                          />
+                          <a
+                            href="#"
+                            className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-medium-gray"
+                          >
+                            Planning
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  )}
                 </div>
-                {isCompanyOpen && (
-                  <div className="absolute z-10 mt-1 bg-almost-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-medium-gray">
-                    <ul
-                      className="py-2 text-sm text-medium-gray dark:text-medium-gray m-2"
-                      aria-labelledby="dropdownDefaultButton"
-                    >
-                      <li className="flex flex-row items-center space-x-2">
-                        <a
-                          href="#"
-                          className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-medium-gray"
-                        >
-                          History
-                        </a>
-                      </li>
-                      <li className="flex flex-row items-center space-x-2">
-                        <a
-                          href="#"
-                          className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-medium-gray"
-                        >
-                          Team
-                        </a>
-                      </li>
-                      <li className="flex flex-row items-center space-x-2">
-                        <a
-                          href="#"
-                          className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-medium-gray"
-                        >
-                          Blog
-                        </a>
-                      </li>
-                    </ul>
+                <div
+                  className="relative"
+                  onClick={() => setIsCompanyOpen(!isCompanyOpen)}
+                >
+                  <div className="flex flex-row items-center">
+                    <h2 className="text-medium-gray cursor-pointer">Company</h2>
+                    <img
+                      src={isCompanyOpen ? upArrow : downArrow}
+                      alt={isCompanyOpen ? "Up Arrow Icon" : "Down Arrow Icon"}
+                      className="w-4 h-2"
+                    ></img>
                   </div>
-                )}
-              </div>
+                  {isCompanyOpen && (
+                    <div className="absolute z-10 mt-1 bg-almost-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-medium-gray">
+                      <ul
+                        className="py-2 text-sm text-medium-gray dark:text-medium-gray m-2"
+                        aria-labelledby="dropdownDefaultButton"
+                      >
+                        <li className="flex flex-row items-center space-x-2">
+                          <a
+                            href="#"
+                            className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-medium-gray"
+                          >
+                            History
+                          </a>
+                        </li>
+                        <li className="flex flex-row items-center space-x-2">
+                          <a
+                            href="#"
+                            className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-medium-gray"
+                          >
+                            Team
+                          </a>
+                        </li>
+                        <li className="flex flex-row items-center space-x-2">
+                          <a
+                            href="#"
+                            className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-medium-gray"
+                          >
+                            Blog
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  )}
+                </div>
 
-              <div className="flex flex-row space-x-2">
-                <a href="#" className="text-medium-gray">
-                  Careers
-                </a>
-              </div>
+                <div className="flex flex-row space-x-2">
+                  <a href="#" className="text-medium-gray">
+                    Careers
+                  </a>
+                </div>
 
-              <div className="flex flex-row space-x-2">
-                <a href="#" className="text-medium-gray">
-                  About
-                </a>
+                <div className="flex flex-row space-x-2">
+                  <a href="#" className="text-medium-gray">
+                    About
+                  </a>
+                </div>
               </div>
-            </div>
-            <div>
-              <div className="flex flex-row p-6 space-x-10 font-md font-epilogue">
-                <button className="bg-almost-white text-medium-gray rounded-lg p-2">
-                  Login
-                </button>
-                <button className="bg-almost-white text-medium-gray rounded-lg p-2 border border-medium-gray">
-                  Register
-                </button>
+              <div>
+                <div className="flex flex-row p-6 space-x-10 font-md font-epilogue">
+                  <button className="bg-almost-white text-medium-gray rounded-lg p-2">
+                    Login
+                  </button>
+                  <button className="bg-almost-white text-medium-gray rounded-lg p-2 border border-medium-gray">
+                    Register
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="grid-container" style={{ marginTop: '140px' }}>
-          <div className="flex flex-col space-y-20 justify-start p-20 grid-item">
-            <h1 className="font-almost-black font-epilogue font-bold text-6xl">
-              Make remote work
-            </h1>
-            <h2 className="font-medium-gray font-epilogue text-lg">
-              Get your team in sync, no matter your location. Streamline
-              processes, create team rituals, and watch productivity soar.
-            </h2>
-            {/* Button Learn More */}
-            <div className="flex items-center">
-              <button className="bg-almost-black text-almost-white font-bold rounded-lg p-2">
-                Learn more
-              </button>
+          <div className="grid-container" style={{ marginTop: "140px" }}>
+            <div className="flex flex-col space-y-20 justify-start p-20 grid-item">
+              <h1 className="font-almost-black font-epilogue font-bold text-6xl">
+                Make remote work
+              </h1>
+              <h2 className="font-medium-gray font-epilogue text-lg">
+                Get your team in sync, no matter your location. Streamline
+                processes, create team rituals, and watch productivity soar.
+              </h2>
+              {/* Button Learn More */}
+              <div className="flex items-center">
+                <button className="bg-almost-black text-almost-white font-bold rounded-lg p-2">
+                  Learn more
+                </button>
+              </div>
+              {/* Client Logos */}
+              <div className="flex flex-row justify-between">
+                <img
+                  src={clientDatabiz}
+                  alt="Client Databiz image"
+                  className="h-8"
+                ></img>
+                <img
+                  src={clientAudiophile}
+                  alt="Client Audiophile image"
+                  className="h-8"
+                ></img>
+                <img
+                  src={clientMeet}
+                  alt="Client Meet image"
+                  className="h-8"
+                ></img>
+                <img
+                  src={clientMaker}
+                  alt="Client Maker image"
+                  className="h-8"
+                ></img>
+              </div>
             </div>
-            {/* Client Logos */}
-            <div className="flex flex-row justify-between">
+            <div className="grid-item">
               <img
-                src={clientDatabiz}
-                alt="Client Databiz image"
-                className="h-8"
-              ></img>
-              <img
-                src={clientAudiophile}
-                alt="Client Audiophile image"
-                className="h-8"
-              ></img>
-              <img
-                src={clientMeet}
-                alt="Client Meet image"
-                className="h-8"
-              ></img>
-              <img
-                src={clientMaker}
-                alt="Client Maker image"
-                className="h-8"
+                src={backgroundDesktopImage}
+                alt="Desktop background image"
+                className="flex-grow w-full h-full object-cover"
               ></img>
             </div>
-          </div>
-          <div className="grid-item">
-            <img
-              src={backgroundDesktopImage}
-              alt="Desktop background image"
-              className="flex-grow w-full h-full object-cover"
-            ></img>
           </div>
         </div>
       </div>

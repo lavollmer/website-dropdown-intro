@@ -1,4 +1,3 @@
-
 @media (min-width: 1024px) {
   .nav-sidebar {
 	display: none;
@@ -9,15 +8,21 @@
     .mobile-logo {
       display:none
     }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Creates 2 columns of equal width */
+      gap: 10px; /* Optional: Adds space between grid items */
+    }
+    
+    .grid-item {
+      /* Style your grid items here */
+      padding: 60px;
+    }
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Creates 2 columns of equal width */
-  gap: 10px; /* Optional: Adds space between grid items */
+@media (max-width: 768px) {
+  .desktop-layout {
+    display: none;
 }
-
-.grid-item {
-  /* Style your grid items here */
-  padding: 60px;
 }
