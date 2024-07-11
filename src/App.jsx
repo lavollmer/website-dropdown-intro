@@ -192,7 +192,7 @@ function App() {
             <div className="flex flex-row items-center space-x-20">
               <img src={logo} alt="Snap logo" className="ml-10" />
               <div
-                className="flex flew-row items-center"
+                className="flex flew-row items-center relative"
                 onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
               >
                 <h2 className="text-medium-gray cursor-pointer">Features</h2>
@@ -203,33 +203,33 @@ function App() {
                 />
               </div>
               {isFeaturesOpen && (
-                <div className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
-                  <ul className="flex flex-col ml-4 space-y-4">
-                    <li className="flex flex-row space-x-2">
+                <div className="absolute z-10 mt-60 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                  <ul className="py-2 text-sm text-gray-700 dark:text-gray-200 m-2" aria-labelledby="dropdownDefaultButton">
+                    <li className="flex flex-row items-center space-x-2">
                       <img src={todo} alt="todo icon" className="h-4 w-4" />
-                      <a href="#" className="text-medium-gray">
+                      <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-medium-gray">
                         Todo List
                       </a>
                     </li>
-                    <li className="flex flex-row space-x-2">
+                    <li className="flex flex-row items-center space-x-2">
                       <img src={calendar} alt="todo icon" className="h-4 w-4" />
-                      <a href="#" className="text-medium-gray">
+                      <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-medium-gray">
                         Calendar
                       </a>
                     </li>
-                    <li className="flex flex-row space-x-2">
+                    <li className="flex flex-row items-center space-x-2">
                       <img
                         src={reminders}
                         alt="todo icon"
                         className="h-4 w-4"
                       />
-                      <a href="#" className="text-medium-gray">
+                      <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-medium-gray">
                         Reminders
                       </a>
                     </li>
-                    <li className="flex flex-row space-x-2">
+                    <li className="flex flex-row items-center space-x-2">
                       <img src={planning} alt="todo icon" className="h-4 w-4" />
-                      <a href="#" className="text-medium-gray">
+                      <a href="#" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-medium-gray">
                         Planning
                       </a>
                     </li>

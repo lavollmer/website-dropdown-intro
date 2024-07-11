@@ -67,6 +67,7 @@ Users should be able to:
 - [Navigation Sidebar](https://flowbite.com/docs/components/sidebar/) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 - [useState Hooks](https://hygraph.com/blog/usestate-react)
 - [Conditional Styling](https://owlcation.com/stem/conditional-styling-react)
+- [TailwindCSS Dropdown] (https://flowbite.com/docs/components/dropdowns/)
 
 
 ## Author
