@@ -53,50 +53,31 @@ Mobile Sidebar Navigation Company Dropdown View:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Netlify Deployed Website](https://thunderous-biscotti-67daf5.netlify.app/)
 
-## My process
+## My Process
 
-1. Mobile Responsive Design First
-2. Mobile Responsive - Side tab with dropdown
-3. Planning process using paint in Microsoft
+The journey of this project began with the initial setup, which included creating a GitHub repository, initializing a Vite project with ReactJS, and integrating TailwindCSS. I configured TailwindCSS to incorporate the project's design specifications, such as fonts and colors. After ensuring the foundational elements were operational through an initial commit, I proceeded to remove the default ReactJS template content to start with a clean slate.
+
+My approach to tackling the project was methodical and planned. I started by analyzing the provided design layout and style guide, utilizing Microsoft Paint to sketch a roadmap for the development process. This preliminary planning phase helped me strategize the implementation of key features, including hover states, a mobile-responsive layout, and dropdown menus. The decision to prioritize the mobile layout and sidebar navigation set the stage for a structured development process.
+
+The construction of the mobile layout was the first milestone, where I focused on replicating the design's key elements: positioning the logo, adding a hamburger menu icon, centering an image, and arranging the textual content and interactive elements at the bottom. This phase laid a solid foundation for the mobile user experience.
+
+Next, I tackled the sidebar navigation, which proved to be a challenging endeavor. Implementing the sidebar required a deeper dive into React's useState hooks for dynamic content display, alongside mastering TailwindCSS for styling. The development of an animated sidebar, triggered by the hamburger icon, involved careful consideration of text styling and the integration of dropdown functionality. This phase was instrumental in enhancing my understanding of state management and UI interactivity.
+
+Transitioning to the desktop layout, I aimed to maintain consistency with the mobile version while accommodating the nuances of a larger viewport. Utilizing a grid container for the main content and flexbox for the navigation bar, I navigated through the complexities of responsive design and dropdown menu styling. This stage was particularly enlightening, as it deepened my knowledge of CSS positioning and flexbox.
+
+The final touches to the project involved refining hover states and ensuring compliance with the design requirements. The adjustment of media queries ensured a seamless transition between different device sizes. Deploying the project on Netlify was the final touch of my efforts, providing a a live website of my work.
+
+Reflecting on the project, I am very satisfied with the outcome and the growth I experienced throughout the process. The project not only solidified my skills in responsive design and React development but also instilled a deeper appreciation for the intricacies of web development.
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - Vite
 - Tailwind CSS
-
-
-### What I learned
-
-1. To ensure the background color extends all the way down the page in Tailwind CSS, you can apply a minimum height (min-h-screen) to the top-level <div> in your App component. This utility class ensures that the <div> will have at least the height of the viewport, thus extending the background color throughout the entire visible area of the page, regardless of the content's height.
-
-
-### Continued development
-
-
-### Useful resources
-
-- [Google Font Epilogue](https://fonts.google.com/specimen/Epilogue) - Google Font Epilogue from Google Fonts.
-- [Navigation Sidebar](https://flowbite.com/docs/components/sidebar/) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-- [useState Hooks](https://hygraph.com/blog/usestate-react)
-- [Conditional Styling](https://owlcation.com/stem/conditional-styling-react)
-- [TailwindCSS Dropdown] (https://flowbite.com/docs/components/dropdowns/)
-
-
-## Author
-
-- Website - [Laura V](www.lauradeveloper.com)
-- Frontend Mentor - [@lavollmer](https://www.frontendmentor.io/profile/yourusername)
-- Github - [@lavollmer](https://github.com/lavollmer)
-
-
-## Acknowledgments
+- Semantic HTML5 markup
+- CSS custom properties
 
 
