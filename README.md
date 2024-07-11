@@ -51,7 +51,7 @@ Mobile Sidebar Navigation Company Dropdown View:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/reactjs-tailwindcss-vite-css-dropdown-menu-intro-website-challenge-R3zpKSF5mr)
 - Live Site URL: [Netlify Deployed Website](https://thunderous-biscotti-67daf5.netlify.app/)
 
 ## My process
