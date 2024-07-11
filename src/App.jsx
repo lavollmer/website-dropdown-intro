@@ -62,7 +62,7 @@ function App() {
                 className="flex flew-row items-center justify-between"
                 onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
               >
-                <h2 className="text-medium-gray cursor-pointer">Features</h2>
+                <h2 className="text-medium-gray cursor-pointer hover:text-almost-black transition duration-500">Features</h2>
                 <img
                   src={isFeaturesOpen ? upArrow : downArrow}
                   alt={isFeaturesOpen ? "Up Arrow Icon" : "Down Arrow Icon"}
@@ -160,7 +160,7 @@ function App() {
           </div>
           {/* Button Learn More */}
           <div className="flex items-center justify-center">
-            <button className="bg-almost-black text-almost-white font-bold rounded-lg p-2">
+            <button className="bg-almost-black text-almost-white font-bold rounded-lg p-2 hover:bg-medium-gray transition duration-500 ">
               Learn more
             </button>
           </div>
@@ -197,7 +197,7 @@ function App() {
                   onClick={() => setIsFeaturesOpen(!isFeaturesOpen)}
                 >
                   <div className="flex flex-row items-center">
-                    <h2 className="text-medium-gray cursor-pointer">
+                    <h2 className="text-medium-gray cursor-pointer hover:text-almost-black transition duration-500">
                       Features
                     </h2>
                     <img
@@ -269,7 +269,7 @@ function App() {
                   onClick={() => setIsCompanyOpen(!isCompanyOpen)}
                 >
                   <div className="flex flex-row items-center">
-                    <h2 className="text-medium-gray cursor-pointer">Company</h2>
+                    <h2 className="text-medium-gray cursor-pointer hover:text-almost-black transition duration-500">Company</h2>
                     <img
                       src={isCompanyOpen ? upArrow : downArrow}
                       alt={isCompanyOpen ? "Up Arrow Icon" : "Down Arrow Icon"}
@@ -312,23 +312,23 @@ function App() {
                 </div>
 
                 <div className="flex flex-row space-x-2">
-                  <a href="#" className="text-medium-gray">
+                  <a href="#" className="text-medium-gray hover:text-almost-black transition duration-500">
                     Careers
                   </a>
                 </div>
 
                 <div className="flex flex-row space-x-2">
-                  <a href="#" className="text-medium-gray">
+                  <a href="#" className="text-medium-gray hover:text-almost-black transition duration-500">
                     About
                   </a>
                 </div>
               </div>
               <div>
                 <div className="flex flex-row p-6 space-x-10 font-md font-epilogue">
-                  <button className="bg-almost-white text-medium-gray rounded-lg p-2">
+                  <button className="bg-almost-white text-medium-gray rounded-lg p-2 hover:text-almost-black transition duration-500">
                     Login
                   </button>
-                  <button className="bg-almost-white text-medium-gray rounded-lg p-2 border border-medium-gray">
+                  <button className="bg-almost-white text-medium-gray rounded-lg p-2 border border-medium-gray hover:bg-almost-black hover:text-almost-white transition duration-500">
                     Register
                   </button>
                 </div>
@@ -346,7 +346,7 @@ function App() {
               </h2>
               {/* Button Learn More */}
               <div className="flex items-center">
-                <button className="bg-almost-black text-almost-white font-bold rounded-lg p-2">
+                <button className="bg-almost-black text-almost-white font-bold rounded-lg p-2 hover:bg-medium-gray transition duration-500">
                   Learn more
                 </button>
               </div>
