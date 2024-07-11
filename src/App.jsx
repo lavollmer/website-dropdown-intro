@@ -268,8 +268,8 @@ function App() {
                 <div className="flex flex-row items-center">
                   <h2 className="text-medium-gray cursor-pointer">Company</h2>
                   <img
-                    src={isFeaturesOpen ? upArrow : downArrow}
-                    alt={isFeaturesOpen ? "Up Arrow Icon" : "Down Arrow Icon"}
+                    src={isCompanyOpen ? upArrow : downArrow}
+                    alt={isCompanyOpen ? "Up Arrow Icon" : "Down Arrow Icon"}
                     className="w-4 h-2"
                   ></img>
                 </div>
