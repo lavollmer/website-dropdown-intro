@@ -187,9 +187,9 @@ function App() {
         </div>
         {/* Desktop Layout */}
         {/* Desktop Copy Text */}
-        <div className="fixed top-0 left-0 p-8 space-x-10 items-center font-bold text-md font-epilogue">
-          <nav className="flex flex-row justify-between items-center space-x-10 w-full">
-            <div className="flex items-center">
+        <div className="flex p-8 items-center justify-between font-bold text-md font-epilogue">
+          <nav className="fixed top-0 left-0 items-center">
+            <div className="flex flex-row items-center space-x-20">
               <img src={logo} alt="Snap logo" />
               <div
                 className="flex flew-row items-center justify-between"
@@ -281,7 +281,6 @@ function App() {
             </div>
           </nav>
         </div>
-
         <div className="grid-container">
           <div className="flex flex-col space-y-20 justify-start p-20 grid-item">
             <h1 className="font-almost-black font-epilogue font-bold text-6xl">
