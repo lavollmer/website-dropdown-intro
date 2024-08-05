@@ -1,6 +1,6 @@
 # Intro section with dropdown navigation solution
 
-This project was aimed at learning about introductory website layout and dropdown menus. This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This project was aimed at learning about introductory website layout and dropdown menus. 
 
 ## Table of contents
 
@@ -51,8 +51,8 @@ Mobile Sidebar Navigation Company Dropdown View:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/reactjs-tailwindcss-vite-css-dropdown-menu-intro-website-challenge-R3zpKSF5mr)
-- Live Site URL: [Netlify Deployed Website](https://thunderous-biscotti-67daf5.netlify.app/)
+- Solution URL: [Frontend Mentor Solution Laura Dev](https://www.frontendmentor.io/solutions/reactjs-tailwindcss-vite-css-dropdown-menu-intro-website-challenge-R3zpKSF5mr)
+- Live Site URL: [Dropdown Intro Website Laura Dev](https://thunderous-biscotti-67daf5.netlify.app/)
 
 ## My process
 
@@ -82,34 +82,7 @@ Reflecting on the project, I am very satisfied with the outcome and the growth I
 
 ### What I learned
 
-1. Throughout this project, my proficiency in utilizing TailwindCSS for custom styling significantly improved. I learned more about extending Tailwind's default theme to include project-specific colors, font sizes, and fonts. This was crucial for aligning the website's design with the predefined style guide. An example of this customization involved adding unique color schemes, adjusting font sizes for readability, and incorporating a custom font family, 'Epilogue', directly into Tailwind's configuration. Here's how I extended the theme in Tailwind's configuration file:
-
-`
-module.exports = {
-  purge: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
-  darkMode: false, // or 'media' or 'class'
-  theme: {
-    extend: {
-      colors: {
-        'almost-white': 'hsl(0,0%,98%)',
-        'almost-black': 'hsl(0,0%,8%)',
-        'medium-gray': 'hsl(0,0%,41%)',
-      },
-      fontSize: {
-        'paragraph': '18px',
-      },
-      fontFamily: {
-        'epilogue': ['Epilogue', 'sans-serif'], // Add this line
-      },
-    },
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
-};
-
-  `
+1. **TailwindCSS Configuration** - Throughout this project, my proficiency in utilizing TailwindCSS for custom styling significantly improved. I learned more about extending Tailwind's default theme to include project-specific colors, font sizes, and fonts. This was crucial for aligning the website's design with the predefined style guide. An example of this customization involved adding unique color schemes, adjusting font sizes for readability, and incorporating a custom font family, 'Epilogue', directly into Tailwind's configuration. 
 
 2. **Extending Background Color with Tailwind CSS**: To ensure the background color stretches to the bottom of the page, I applied the `min-h-screen` class to the main `<div>` in the App component. This approach guarantees that the `<div>` covers at least the full height of the viewport, allowing the background color to fill the entire visible area, independent of content height.
 
@@ -141,12 +114,12 @@ Resources I used to help build my project or reference:
 - [Navigation Sidebar](https://flowbite.com/docs/components/sidebar/) 
 - [useState Hooks](https://hygraph.com/blog/usestate-react)
 - [Conditional Styling](https://owlcation.com/stem/conditional-styling-react)
-- [TailwindCSS Dropdown] (https://flowbite.com/docs/components/dropdowns/)
+- [TailwindCSS Dropdown](https://flowbite.com/docs/components/dropdowns/)
 
 
 ## Author
 
-- Website - [Laura V](www.lauradeveloper.com)
-- Frontend Mentor - [@lavollmer](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Laura V](https://lauradeveloper.com/)
+- Frontend Mentor - [@lavollmer](https://www.frontendmentor.io/profile/lavollmer)
 - Github - [@lavollmer](https://github.com/lavollmer)
 
